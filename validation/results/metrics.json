@@ -1,0 +1,121 @@
+{
+  "registros": {
+    "crudos": 28428,
+    "duplicados": 3257,
+    "usados": 25171
+  },
+  "distribucion": {
+    "riesgo_alto": 34,
+    "riesgo_moderado": 15682,
+    "riesgo_bajo": 9360,
+    "sin_verificar": 95
+  },
+  "validacion_cruzada": {
+    "accuracy": {
+      "media": 0.9996,
+      "desviacion": 0.0002
+    },
+    "f1_macro": {
+      "media": 0.9768,
+      "desviacion": 0.0189
+    },
+    "recall_macro": {
+      "media": 0.9713,
+      "desviacion": 0.0267
+    }
+  },
+  "por_clase": {
+    "riesgo_alto": {
+      "precision": 0.9375,
+      "recall": 0.8824,
+      "f1-score": 0.9091,
+      "support": 34.0
+    },
+    "riesgo_moderado": {
+      "precision": 0.9999,
+      "recall": 0.9997,
+      "f1-score": 0.9998,
+      "support": 15682.0
+    },
+    "riesgo_bajo": {
+      "precision": 0.9995,
+      "recall": 0.9999,
+      "f1-score": 0.9997,
+      "support": 9360.0
+    },
+    "sin_verificar": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 95.0
+    }
+  },
+  "agregado": {
+    "accuracy": 0.9996,
+    "macro": {
+      "precision": 0.9842,
+      "recall": 0.9705,
+      "f1-score": 0.9771
+    }
+  },
+  "matriz_confusion": {
+    "orden": [
+      "riesgo_alto",
+      "riesgo_moderado",
+      "riesgo_bajo",
+      "sin_verificar"
+    ],
+    "valores": [
+      [
+        30,
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        15678,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        9359,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        95
+      ]
+    ]
+  },
+  "importancias": {
+    "sellerSeniorityInDays": 0.2958,
+    "cobertura_evidencia": 0.2278,
+    "ratingAvg": 0.1734,
+    "ratingCount": 0.1122,
+    "shopFollowerCount": 0.0833,
+    "discount": 0.0559,
+    "shopItemCount": 0.0471,
+    "imagesCount": 0.0027,
+    "isShopeeVerified": 0.0018
+  },
+  "diagnostico_arbol_profundidad_5": {
+    "accuracy": 0.9999,
+    "f1_macro": 0.989,
+    "hojas": 11,
+    "variables_usadas": [
+      "cobertura_evidencia",
+      "discount",
+      "ratingAvg",
+      "sellerSeniorityInDays"
+    ]
+  },
+  "linea_base_clase_mayoritaria": {
+    "accuracy": 0.623,
+    "f1_macro": 0.1919
+  }
+}
